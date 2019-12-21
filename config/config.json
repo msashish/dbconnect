@@ -1,0 +1,7 @@
+{
+    "Environment": "dev",
+    "Database": {
+        "Type": "SQLITE",
+        "Schema": ":memory:"
+    }
+}
