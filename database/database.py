@@ -1,7 +1,4 @@
-import sqlite3
 import logging
-
-sqlite3.paramstyle = "named"
 
 
 class Database:

@@ -8,7 +8,8 @@ class SQLiteDatabase(Database):
         conn = sqlite3.connect(db_schema)
         super().__init__(conn)
 
-    @classmethod
-    def get_db_instance(cls, schema):
-        db_instance = cls(schema)
-        return db_instance
+    def run_scripts(self, sql_file):
+        with open(sql_file) as sql_file:
+            sql_scripts = sql_file.read()
+        with self.conn as conn:
+            conn.executescript(sql_scripts)

@@ -1,10 +1,10 @@
 {
-    "Environment": "dev",
+    "Environment": "TEST",
     "Database": {
         "Type": "Oracle",
-        "ConnectIdentifier": "/@SOBIH.CONN",
-        "OracleHome": "/app/oracle/product/client/12.2.0.1",
-        "OracleSchema": "SOBIH_AUDIT_P",
-        "TNSConfig": "/app/oracle/product/client/12.2.0.1/client_1/SOBIH"
+        "ConnectIdentifier": "/@xyz",
+        "OracleHome": "path to oracle home",
+        "OracleSchema": "schema_name",
+        "TNSConfig": "path to wallet"
     }
 }

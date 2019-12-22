@@ -1,2 +1,4 @@
 .idea/
 venv/
+application/__pycache__/
+database/__pycache__/

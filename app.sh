@@ -7,5 +7,6 @@ source venv/bin/activate
 pip install cx_Oracle
 python app.py $@
 RC=$?
+echo "Program ended with RC $RC"
 deactivate
 exit $RC

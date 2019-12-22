@@ -1,6 +1,12 @@
 # dbconnect
+
 Spin up a database based on configuration
 
-# Starting point of Application which is called as:
-#        app.sh --> app.py --> app_cli.py
-#        app.py --> app_cli.py
+# To run on a Mac:
+
+ksh app.sh --name "Ashish"
+
+# To run anywhere python 3.6 or more is installed:
+python3 app.py --name "SomeoneElse"
+
+# To run on Cent Os:
