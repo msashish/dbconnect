@@ -2,8 +2,8 @@
 # For this, we shall provide a method that will call __init__()
 
 from typing import Dict, Any
-from database.database import Database
-from database import spinup_db_instance
+from application.database.database import Database
+from application.database import spinup_db_instance
 import json
 
 

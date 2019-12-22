@@ -1,14 +1,20 @@
+from pathlib import Path
+
+
 def spinup_db_instance(db_conf):
     if db_conf['Type'] == "SQLITE":
-        from database.sqlite_database import SQLiteDatabase
+        from application.database.sqlite_database import SQLiteDatabase
         import sqlite3
         sqlite3.paramstyle = "named"
         # get SQLite db_instance and run scripts to create structures
         db_instance = SQLiteDatabase(db_conf['Schema'])
-        db_instance.run_scripts('sql/sqlite_ddl.sql')
+        if Path('sql/sqlite_ddl.sql').is_file():
+            db_instance.run_scripts('sql/sqlite_ddl.sql')
+        else:
+            print("No DDL file for creating structures for you in SQLite. Check and rerun..")
 
     if db_conf['Type'] == 'Oracle':
-        from database.oracle_database import OracleDatabase
+        from application.database import OracleDatabase
         assert 'ConnectIdentifier' in db_conf, 'Oracle Database requires an Connect Identifier'
         assert 'OracleHome' in db_conf, 'Oracle Database requires an Oracle Home'
         assert 'OracleSchema' in db_conf, 'Oracle Database requires an Schema'

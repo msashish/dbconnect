@@ -1,0 +1,3 @@
+coverage
+cx_Oracle
+unittest-xml-reporting

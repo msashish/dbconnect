@@ -1,0 +1,12 @@
+version: "3"
+services:
+  application_test:
+    build:
+      context: .
+      args:
+        - PROXY=http://host.docker.internal:3128
+    volumes:
+      - ..:/opt/dbconnect
+      - ../../oracle_wallet:/opt/oracle/wallet
+    environment:
+      - oracle_connection_string

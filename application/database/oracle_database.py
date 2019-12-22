@@ -1,6 +1,6 @@
 import os
 import cx_Oracle
-from database.database import Database
+from application.database.database import Database
 
 
 class OracleDatabase(Database):

@@ -1,4 +1,4 @@
-from database.database import Database
+from application.database.database import Database
 import sqlite3
 
 

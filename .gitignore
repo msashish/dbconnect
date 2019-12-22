@@ -1,4 +1,7 @@
 .idea/
 venv/
 application/__pycache__/
+application/database/__pycache__/
+.coverage
+reports/
 database/__pycache__/
