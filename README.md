@@ -1,6 +1,6 @@
 # **dbconnect**
 
-Spin up a database based on configuration. By default uses sqlite however you can configure other databases.
+Spin up a database based on configuration. By default uses sqlite however you can configure other database (refer to /config/)
 
 Tests for CI is done @ https://travis-ci.org/msashish/dbconnect
 
@@ -18,7 +18,7 @@ cd docker
 
 docker-compose up
 
-# **However, if you still want to manually test ** 
+# **However, if you still want to manually test** 
 [Better to do it in a virtual environment]
 
 cd dbconnect
