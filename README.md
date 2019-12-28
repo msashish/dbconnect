@@ -2,7 +2,7 @@
 
 Spin up a database based on configuration. By default uses sqlite however you can configure other database (refer to /config/)
 
-Tests for CI is done @ https://travis-ci.org/msashish/dbconnect
+Automatic tests for CI is done @ https://travis-ci.org/msashish/dbconnect
 
 # App Structure
 
